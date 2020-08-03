@@ -8,7 +8,7 @@ exports.getUserById =(req,res,next,id)=>{
             return res.status(400).json({
                 errpr:"No user was found in DB"
             })
-        }
+        } 
         req.profile =user;
         next();
     });

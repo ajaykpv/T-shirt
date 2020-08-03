@@ -11,7 +11,7 @@ router.post("/signup",[
     check("password","password should be 3 characters")
     .isLength({ min: 3 }),
 ],
-signup
+signup 
 );
 router.post("/signin",[
     check("email","email is required")
